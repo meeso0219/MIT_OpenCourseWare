@@ -26,14 +26,27 @@
 epsilon = 100.0 # $100
 
 annual_salary = float(input("Enter you starting annual salary: "))
+monthly_salary = annual_salary / 12
 
 portion_down_payment = 0.25 # 25%
 annual_return = 0.04 # 4%
+semi_annual_raise = 0.07
 total_cost = 1000000.0
 number_of_months = 36
+current_savings = 0
+total_money_need = portion_down_payment * total_cost
 
 number_of_guesses = 0
 
 low = 0.0
 high = 1.0
+guess = (high + low) / 2.0
+portion_saved = guess
+
+# TODO
+while number_of_months >= 36 or current_savings >= total_money_need:
+    number_of_guesses += 1
+    number_of_months += 1
+    portion_saved = guess
+
 
