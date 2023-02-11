@@ -22,3 +22,18 @@
     is a challenge, we simply want your savings to be within $100 of the
     required down payment.
 '''
+
+epsilon = 100.0 # $100
+
+annual_salary = float(input("Enter you starting annual salary: "))
+
+portion_down_payment = 0.25 # 25%
+annual_return = 0.04 # 4%
+total_cost = 1000000.0
+number_of_months = 36
+
+number_of_guesses = 0
+
+low = 0.0
+high = 1.0
+
